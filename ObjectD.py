@@ -3,7 +3,7 @@ import numpy as np
 from collections import deque
 from ultralytics import YOLO  # For YOLOv8
 
-# Initialize YOLOv8 model
+# Initialize YOLOv8 model (use 'yolov8n.pt' for nano version, 'yolov8s.pt' for small, etc.)
 model = YOLO('yolov8n.pt')
 
 # Initialize video capture (0 for webcam, or path to video file)
