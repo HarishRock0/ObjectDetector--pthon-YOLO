@@ -43,7 +43,7 @@ def main():
                 break
             
             # Run YOLOv8 tracking on the frame
-            results = model.track(frame, persist=True, tracker="bytetrack.yaml")
+            results = model.track(frame, persist=True, tracker="bytetrack.yaml", imgsz=320)
             
             # Visualize the results on the frame
             annotated_frame = results[0].plot()
